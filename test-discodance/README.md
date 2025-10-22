@@ -1,6 +1,6 @@
 # Discodance Demo App
 
-This is a demo Next.js application showcasing [Discodance](https://github.com/yourusername/discodance), a visual website builder for Next.js + Tailwind CSS.
+This is a demo Next.js application showcasing [Discodance](https://github.com/ruben--/discodance), a visual website builder for Next.js + Tailwind CSS.
 
 ## Features
 
@@ -20,9 +20,17 @@ This is a demo Next.js application showcasing [Discodance](https://github.com/yo
 
 ### Installation
 
-1. Clone this repository:
+1. Clone both repositories:
 ```bash
-git clone <your-repo-url>
+# Clone the Discodance package
+git clone https://github.com/ruben--/discodance.git
+cd discodance
+npm install
+npm run build
+cd ..
+
+# Clone this demo app
+git clone https://github.com/ruben--/test-discodance.git
 cd test-discodance
 ```
 
@@ -31,17 +39,9 @@ cd test-discodance
 npm install
 ```
 
-3. Install Discodance:
-
-**Option A: From npm (when published)**
+3. Install Discodance from the local directory:
 ```bash
-npm install discodance
-```
-
-**Option B: From local directory (development)**
-```bash
-# If you have the discodance package locally
-npm install /path/to/discodance
+npm install ../discodance
 ```
 
 4. Start the development server:
@@ -126,7 +126,7 @@ The Discodance API is available at `/api/discodance/[...path]` and provides:
 
 ## Learn More
 
-- [Discodance Documentation](https://github.com/yourusername/discodance)
+- [Discodance Repository](https://github.com/ruben--/discodance)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
